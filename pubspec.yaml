@@ -1,7 +1,7 @@
 name: counterbutton
-description: Resizable Counter Button. Changeable Background Colors.
+description: Resizable Counter Button. Changeable Background Colors & Icons.
 version: 0.0.1
-homepage:
+author: Ilias El Bekkali
 
 environment:
   sdk: '>=2.18.0-44.1.beta <3.0.0'

@@ -29,7 +29,42 @@ TODO: Include short and useful examples for package users. Add longer examples
 to `/example` folder.
 
 ```dart
-const like = 'sample';
+import 'package:flutter/material.dart';
+import '../CounterButton.dart';
+
+class ExampleWidget extends StatefulWidget {
+  const ExampleWidget({Key? key}) : super(key: key);
+
+  @override
+  State<ExampleWidget> createState() => _ExampleWidgetState();
+}
+
+class _ExampleWidgetState extends State<ExampleWidget> {
+  int newValue = 0;
+  
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: CounterButton(
+        width: 250,
+        height: 60,
+        initValue: newValue,
+        minValue: 0,
+        maxValue: 10,
+        iconColor: Colors.white,
+        iconSize: 25.0,
+        buttonColor: Colors.green,
+        textColor: Colors.black,
+        icon_left: Icon(Icons.remove),
+        icon_right: Icon(Icons.add),
+        onChanged: (value) {
+          newValue = value;
+        },
+      )
+    );
+  }
+}
+
 ```
 
 ## Additional information
