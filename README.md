@@ -52,5 +52,10 @@ class _ExampleWidgetState extends State<ExampleWidget> {
     );
   }
 }
+//if you use an initValue only as undeclared integer -> it'll have no relation and does not work like it have to do..
+// FOLLOW THESE STEPS: 
+//1. Create a Value like newValue as int like on the top of code newValue = 0 ..- init it in CountNumberButton Widget.. 
+//2. - use onChanged method and set newValue as value to save the state of val to work with...
+// NOW YOU HAVE YOUR COUNTNUMBERBUTTON .. PLEASE LIKE IT AND HAVE FUN WITH IT.. :D
 
 ```
