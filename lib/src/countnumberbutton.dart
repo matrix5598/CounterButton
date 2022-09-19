@@ -1,18 +1,6 @@
 import 'package:flutter/material.dart';
 
 class CountNumberButton extends StatefulWidget {
-  final double width;
-  final double height;
-  late int initValue;
-  final int minValue;
-  final int maxValue;
-  final Color iconColor;
-  final Color buttonColor;
-  final Color textColor;
-  final double iconSize;
-  final Icon icon_left;
-  final Icon icon_right;
-  final ValueChanged onChanged;
   CountNumberButton({
     Key? key,
     required this.width,
@@ -28,6 +16,19 @@ class CountNumberButton extends StatefulWidget {
     required this.icon_right,
     required this.onChanged,
   }) : super(key: key);
+
+  final double width;
+  final double height;
+  int initValue;
+  final int minValue;
+  final int maxValue;
+  final Color iconColor;
+  final Color buttonColor;
+  final Color textColor;
+  final double iconSize;
+  final Icon icon_left;
+  final Icon icon_right;
+  final ValueChanged onChanged;
 
   @override
   State<CountNumberButton> createState() => _CountNumberButtonState();
