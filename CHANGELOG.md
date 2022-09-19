@@ -1,3 +1,3 @@
-## 0.0.5
+## 0.0.6
 
-* New Version.
+* Configure your CountNumberButton. Resizable Counter Button. Changeable Background Colors & Icons.
